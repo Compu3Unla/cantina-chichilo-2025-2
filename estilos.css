@@ -1,2 +1,30 @@
-/*CSS Document*/
-@charset "UTF-8";
+/*@charset "utf-8";*/
+/* CSS Document */
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/* FOOTER */
+footer{
+  background-color: red;
+  display: flex;
+  gap: 40px;
+  padding-left: 100px; 
+  padding-right: 100px;
+  max-width: auto;
+}
+
+.footer_links{
+  justify-content: center;
+  text-align: center;
+}
+
+footer ul{
+  display: inline-flex;
+  justify-content: center; 
+  align-items:flex-start;
+  list-style: none;
+  text-decoration: none;
+}
