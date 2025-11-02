@@ -18,19 +18,21 @@ body {
 /* HEADER */
 
 header {
-  font-size:28px;
+  font-size: 18px;
   font-weight: medium;
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: center;
   padding: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 nav {
   display: flex;
   gap: 100px;
-  padding: 20px;
+  padding: 10px;
 }
 
 
