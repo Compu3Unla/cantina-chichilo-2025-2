@@ -3,6 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos.css">
@@ -13,20 +18,290 @@
 
 <body>
     <header>
-        <a href="index.html"><img class="icono" src="img/reduccion.svg" alt="logo-chichilo" width="73px" height="70px"></a>
+        <a href="index.html"><img class="icono" src="img/reduccion.svg" alt="logo-chichilo" width="73px"
+                height="70px"></a>
         <!--------Habria que modificar el tamaño del svg del icono, me parece que queda muy grande, no se en sus pantallas como se ve en el tamaño original-------->
         <nav class="navegador">
             <a href="menu.html">MENU</a>
             <a href="reservas.html">RESERVAS</a>
             <a href="nosotros.html">NOSOTROS</a>
         </nav>
+
     </header>
 
-    <main>
+    <main class="menu">
+        <section class="accordion_entradas" id="entradas">
+            <button class="accordion_btn_entradas"entradas> <aria-expanded="false"> 
+                <h2>Entradas</h2>
+            </button>
+            <article class="accordion_content_entradas">
+                <div class="items_entradas">
+                    <ul class="lista_items">
+                        <li>Picada</li>
+                        <li class="descripcion_items">hasta 3 gustos</li>
+                        <li>Bocadillo</li>
+                        <li> Pata de cerdo </li>
+                        <li>Zapallitos rellenos </li>
+                        <li>Porción entera de un gusto</li>
+                        <li class="descripcion_items">al limón, portuguesa, mama cherry y calabresa</li>
+                        <li class="destacado_menu">Acercate al mostrador y elegí lo que más te guste</li>
+                    </ul>
+                </div>
+                <div class="precios_entradas">
+                    <ul class="lista_precios">
+                        <li>$17.000</li>
+                        <li>$9.000</li>
+                        <li>$9.000</li>
+                        <li>$9.000</li>
+                        <li>$21.000</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <section class="accordion_minutas" id="minutas">
+            <button class="accordion_btn_minutas" aria-expanded="false">
+                <h2>Minutas</h2>
+            </button>
+            <article class="accordion_content_minutas">
+                <div class="items_minutas">
+                    <ul class="lista_items">
+                        <li>Mondongo</li>
+                        <li>Albóndigas</li>
+                        <li>Polpetones</li>
+                        <li>Riñones al vino blanco </li>
+                        <li>Lentejas a caballo</li>
+                        <li>Medio pollo</li>
+                        <li>Milanesa</li>
+                        <li>Milanesa tierna napolitana</li>
+                        <li>Suprema napolitana</li>
+                        <li>Puré o fritas</li>
+                        <li class="descripcion_items">espaloma o bastón</li>
+                    </ul>
+                </div>
+                <div class="precios_minutas">
+                    <ul class="lista_precios">
+                        <li>$16.000</li>
+                        <li>$18.000</li>
+                        <li>$18.000</li>
+                        <li>$18.000</li>
+                        <li>$17.000</li>
+                        <li>$23.000</li>
+                        <li>$23.000</li>
+                        <li>$23.000</li>
+                        <li>$12.000</li>
+                        <li>$6.000</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="accordion_postres" id="postres">
+            <button class="accordion_btn_postres" aria-expanded="false">
+                <h2>Postres</h2>
+            </button>
+            <article class="accordion_content_postres">
+                <div class="items_postres">
+                    <ul class="lista_items">
+                        <li>Panqueques con dulce de leche</li>
+                        <li>Panqueques con crema</li>
+                        <li>Panqueques mixtos</li>
+                        <li>Chocotorta</li>
+                        <li>Tiramisú</li>
+                        <li>Flan </li>
+                        <li>Flan con crema </li>
+                        <li>Flan con dulce </li>
+                        <li>Flan mixto </li>
+                        <li>Mousse de chocolate </li>
+                        <li>Mousse con crema y nuez </li>
+                        <li>Merengue con dulce </li>
+                        <li>Merengue con crema </li>
+                        <li>Merengue mixto </li>
+                        <li>Helado mixto </li>
+                        <li>Arroz con leche </li>
+                        <li>Arroz con leche completo </li>
+                        <li>Frutillas con azúcar</li>
+                        <li>Frutillas con crema </li>
+                        <li>Quinotos caseros al rhum</li>
+                        <li class="subtitulo_menu">Copas heladas:</li>
+                        <li>Chicholina </li>
+                        <li>Renato </li>
+                        <li>Don Diego </li>
+                        <li>Vesuvius </li>
+                        <li>Don Pedro </li>
+                        <li>Guadalupe </li>
+                    </ul>
+                </div>
+                <div class="precios_postres">
+                    <ul class="lista_precios">
+                        <li>$11.000</li>
+                        <li>$8.000</li>
+                        <li>$9.000</li>
+                        <li>$9.000</li>
+                        <li>$10.000</li>
+                        <li>$11.000</li>
+                        <li>$14.000</li>
+                        <li>$13.000</li>
+                        <li>$13.000</li>
+                        <li>$16.000</li>
+                        <li>$8.000</li>
+                        <li>$9.000</li>
+                        <li>$10.000</li>
+                        <li>$8.000</li>
+                        <li>$9.000</li>
+                        <li>$19.000</li>
+                        <li>$19.000</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <section class="accordion_pastas" id="pastas">
+            <button class="accordion_btn_pastas" aria-expanded="false">
+                <h2>Pastas</h2>
+            </button>
+            <article class="accordion_content_pastas">
+                <div class="items_pastas">
+                    <ul class="lista_items">
+                        <li>Ñoquis de papa</li>
+                        <li>Tallarines al huevo</li>
+                        <li>Tallarines al roquefort suave</li>
+                        <li>Sorrentinos de muzzarella y jamón</li>
+                        <li>Fusiles artesanales</li>
+
+                </div>
+                <div class="precios_pastas">
+                    <ul class="lista_precios">
+                        <li>$12.000</li>
+                        <li>$11.000</li>
+                        <li>$22.000</li>
+                        <li>$15.000</li>
+                        <li>$13.000</li>
+                    </ul>
+                    <p class="destacado_menu">Salsa a elección</p>
+            </article>
+        </section>
+
+        <section class="accordion_mariscos" id="mariscos">
+            <button class="accordion_btn_mariscos" aria-expanded="false">
+                <h2>Mariscos</h2>
+            </button>
+            <article class="accordion_content_mariscos">
+                <div class="items_mariscos">
+                    <ul class="lista_items">
+                        <li>Rana a la provenzal </li>
+
+                        <li>2 unidades</li>
+                        <li>Caracoles con mejillones </li>
+                        <li>Caracoles a la borgoña</li>
+                        <li class="descripcion_items">manteca, perejil y ajo </li>
+                        <li>Caracolitis </li>
+                        <li>Caracoles </li>
+                        <li>Rabas </li>
+                        <li>Mariscos</li>
+                        <li>Rabas provenzal </li>
+                        <li class="descripcion_items">ajo y perejil </li>
+                        <li>Rabas calabria </li>
+                        <li class="descripcion_items">ajo y adobo </li>
+                        <li>Rabas escarpetta </li>
+                        <li class="descripcion_items">cebolla, papas fritas y limón </li>
+                        <li>Calamarettis fritos </li>
+                        <li>Calamarettis escarpetta </li>
+                        <li>Gambas al ajillo</li>
+                        <li>Filet </li>
+                        <li>Filet a la portuguesa </li>
+                        <li class="descripcion_items">morrón, cebolla y tomate</li>
+                        <li>Filet ajillo </li>
+                        <li class="descripcion_items">ajo, pimentón, oliva y puré</li>
+                        <li>Filet a la manteca </li>
+                        <li class="descripcion_items">manteca y puré</li>
+                        <li>Filet con 4 salsas</li>
+                        <li class="descripcion_items">filetto, salsa blanca, pesto, roquefort y puré duquesa</li>
+                        <li>Filet a la primavera </li>
+                        <li class="descripcion_items">salsa rosa, huevo duro, puré duquesa</li>
+                        <li>Filet al roquefort suave </li>
+                    </ul>
+                </div>
+                <div class="precios_mariscos">
+                    <ul class="lista_precios">
+                        <li>$25.000</li>
+                        <li>$45.000</li>
+                        <li>$35.000</li>
+                        <li>$35.000</li>
+                        <li>$31.000</li>
+                        <li>$21.000</li>
+                        <li>$20.000</li>
+                        <li>$24.000</li>
+                        <li>$24.000</li>
+                        <li>$26.000</li>
+                        <li>$24.000</li>
+                        <li>$27.000</li>
+                        <li>$24.000</li>
+                        <li>$14.000</li>
+                        <li>$22.000</li>
+                        <li>$22.000</li>
+                        <li>$22.000</li>
+                        <li>$22.000</li>
+                        <li>$22.000</li>
+                        <li>$22.000</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+            <section class="accordion_bebidas" id="bebidas">
+                <button class="accordion_btn_bebidas" aria-expanded="false">
+                    <h2>Bebidas</h2>
+                </button>
+                <article class="accordion_content_bebidas">
+                    <div class="items_bebidas">
+                        <ul class="lista_items">
+                            <li>Gaseosa línea Coca Cola</li>
+                            <li>Agua saborizada </li>
+                            <li>Aguas con y sin gas </li>
+                            <li>Cerveza</li>
+                            <li class="subtitulo_menu">Vino de la casa:</li>
+                            <li>Grande</li>
+                            <li>Mediano</li>
+                            <li>Chico</li>
+                        </ul>
+                    </div>
+                    <div class="precios_bebidas">
+                        <ul class="lista_precios">
+                            <li>$4.000</li>
+                            <li>$4.000</li>
+                            <li>$3.000</li>
+                            <li>$13.000</li>
+                            <li>$13.000</li>
+                            <li>$13.000</li>
+                            <li>$7.000</li>
+                            <li>$6.000</li>
+                            <li>$4.000</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
     </main>
 
     <footer>
     </footer>
+    <script>
+        const btn = document.querySelector('.accordion_btn_entradas');
+        const content = document.querySelector('.accordion_content_entradas');
+
+        btn.addEventListener('click', () => {
+            const expanded = btn.getAttribute('aria-expanded') === 'true';
+
+            // Cambiar estado
+            btn.setAttribute('aria-expanded', !expanded);
+            content.classList.toggle('show');
+
+            // Animar apertura / cierre
+            if (expanded) {
+                content.style.maxHeight = '0';
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        });
+    </script>
 </body>
 
 </html>

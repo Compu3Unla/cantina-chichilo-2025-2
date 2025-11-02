@@ -15,24 +15,75 @@ body {
   background-color: #FAF9E7;
 }
 
+h2 {
+  font-family: "Petrona", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
 /* HEADER */
 
 header {
-  font-size:28px;
+  font-size: 18px;
   font-weight: medium;
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: center;
   padding: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 nav {
   display: flex;
   gap: 100px;
-  padding: 20px;
+  padding: 10px;
 }
 
+/*HERO*/
+#hero{
+  display: flex;
+  flex-direction: ;
+  align-items: center;
+}
+
+/*INDEX*/
+
+.imagen-con-descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#nuestras-especialidades {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 30px;
+}
+
+#las-especialidades {
+  display: flex;
+  gap: 20px;
+}
+
+#donde-encontrarnos{
+  background-color: #568A35;
+  padding: 100px;
+}
+
+#datos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 60px;
+  margin: 30px;
+}
 
 
 /* FOOTER */
@@ -57,3 +108,53 @@ footer ul {
   list-style: none;
   text-decoration: none;
 }
+ 
+
+/*menu*/
+
+main.menu {
+  margin: 0px 0px 50px 50px;
+}
+
+/*acordeones*/
+
+
+
+.accordion_content_entradas.show {
+  background-color: #F5DFA5;
+  display: flex;
+  flex-direction: row;
+  padding: 0 16px 16px 16px;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 0px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+
+main.menu {
+  margin: 0px 50px 50px 50px;
+}
+
+
+ul.lista_items {
+  list-style-type: none;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  font-family: 'Baloo 2', sans-serif;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+ul.lista_precios {
+  list-style-type: none;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  font-family: 'petrona', sans-serif;
+  line-height: 2rem;
+  font-size: 1rem;
+  text-align: right;
+}
+
