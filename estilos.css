@@ -15,6 +15,13 @@ body {
   background-color: #FAF9E7;
 }
 
+h2 {
+  font-family: "Petrona", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
 /* HEADER */
 
 header {
@@ -101,7 +108,15 @@ footer ul {
   list-style: none;
   text-decoration: none;
 }
+ 
 
+/*menu*/
+
+main.menu {
+  margin: 0px 0px 50px 50px;
+}
+
+/*acordeones*/
 
 
 
