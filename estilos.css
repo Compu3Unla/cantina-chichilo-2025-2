@@ -18,12 +18,12 @@ body {
 
 h2 {
   color: #FAF9E7;
-text-align: center;
-font-family: Petrona;
-font-size: 3rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  text-align: center;
+  font-family: Petrona;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 h3 {
@@ -31,6 +31,16 @@ h3 {
   font-size: 2.2rem;
   font-weight: bold;
   font-style: italic;
+}
+
+h4 {
+  color: #FAF9E7;
+  text-align: center;
+  font-family: Petrona;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
 }
 
 p {
@@ -97,7 +107,7 @@ nav {
   gap: 20px;
 }
 
-.botones{
+.botones {
   background-color: #274635;
   color: #FAF9E7;
   border-radius: 20px;
@@ -190,6 +200,18 @@ ul.lista_precios {
 }
 
 /*----NOSOTROS----*/
+.hero-nosotros {
+      background-image: url('img/nosotros/reserva.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 130px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3px;
+    }
+
 .nosotros {
   display: flex;
   flex-direction: row;
@@ -243,8 +265,6 @@ ul.lista_precios {
 .img-nosotros-verde h6 {
   color: #FAF9E7;
 }
-
-
 
 .img-nosotros-verde {
   flex-direction: column;
