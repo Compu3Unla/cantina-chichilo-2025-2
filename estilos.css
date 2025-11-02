@@ -15,6 +15,13 @@ body {
   background-color: #FAF9E7;
 }
 
+h2 {
+  font-family: "Petrona", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
 /* HEADER */
 
 header {
@@ -57,6 +64,15 @@ footer ul {
   list-style: none;
   text-decoration: none;
 }
+ 
+
+/*menu*/
+
+main.menu {
+  margin: 0px 0px 50px 50px;
+}
+
+/*acordeones*/
 
 .accordion_entradas {
   display: flex;
@@ -69,7 +85,10 @@ footer ul {
 }
 
 .accordion_btn_entradas {
-  background: #F5DFA5;
+  /*background: #F5DFA5;*/
+  background-image: url('entradas.jpg');
+  background-position: center;
+  background-size: cover;
   border: none;
   padding: .8rem 1.8rem;
   height: 200px;
@@ -100,7 +119,6 @@ footer ul {
   
 }
 
-
 .accordion_content_entradas.show {
   background-color: #F5DFA5;
   display: flex;
@@ -115,11 +133,7 @@ footer ul {
 }
 
 
-
-main.menu {
-  margin: 0px 0px 50px 50px;
-}
-
+/*listas de items y precios*/
 
 ul.lista_items {
   list-style-type: none;
@@ -138,4 +152,21 @@ ul.lista_precios {
   line-height: 2rem;
   font-size: 1rem;
   text-align: right;
+}
+
+.descripcion_items {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #000000;
+  line-height: 1rem;
+}
+
+.destacado_menu {
+  font-weight: bold;
+  font-family: 'Petrona', serif;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 2rem;
+  
 }
