@@ -67,13 +67,11 @@ nav {
   padding: 10px;
 }
 
-/*HERO*/
-#hero {
+/*HERO-INDEX*/
+#hero-index {
   display: flex;
-  flex-direction: column;
+  flex-direction: ;
   align-items: center;
-  background-color: aqua;
-  /*color momentaneo-no alcanzo a ver donde empiezan las cosas-luego de que se aplique la imagen se borra*/
 }
 
 /*INDEX*/
