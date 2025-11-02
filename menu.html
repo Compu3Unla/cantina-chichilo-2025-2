@@ -26,12 +26,12 @@
 
     </header>
 
-    <main>
-        <section class="acordion_entradas" id="entradas">
-            <button class="boton_entradas" aria-expanded="false">
+    <main class="menu">
+        <section class="accordion_entradas" id="entradas">
+            <button class="accordion_btn_entradas" aria-expanded="false">
                 <h2>Entradas</h2>
             </button>
-            <article class="contenido_entradas">
+            <article class="accordion_content_entradas">
                 <div class="items_entradas">
                     <ul class="lista_items">
                         <li>Picada</li>
@@ -41,6 +41,7 @@
                         <li>Zapallitos rellenos </li>
                         <li>Porción entera de un gusto</li>
                         <li class="descripcion_items">al limón, portuguesa, mama cherry y calabresa</li>
+                        <li class="destacado_menu">Acercate al mostrador y elegí lo que más te guste</li>
                     </ul>
                 </div>
                 <div class="precios_entradas">
@@ -51,15 +52,15 @@
                         <li>$9.000</li>
                         <li>$21.000</li>
                     </ul>
-                    <p class="destacado_menu">Acercate al mostrador y elegí lo que más te guste</p>
+                </div>
             </article>
         </section>
 
-        <section class="acordion_minutas" id="minutas">
-            <button class="boton_minutas" aria-expanded="false">
+        <section class="accordion_minutas" id="minutas">
+            <button class="accordion_btn_minutas" aria-expanded="false">
                 <h2>Minutas</h2>
             </button>
-            <article class="contenido_minutas">
+            <article class="accordion_content_minutas">
                 <div class="items_minutas">
                     <ul class="lista_items">
                         <li>Mondongo</li>
@@ -91,11 +92,11 @@
                 </div>
             </article>
         </section>
-        <section class="acordion_postres" id="postres">
-            <button class="boton_postres" aria-expanded="false">
+        <section class="accordion_postres" id="postres">
+            <button class="accordion_btn_postres" aria-expanded="false">
                 <h2>Postres</h2>
             </button>
-            <article class="contenido_postres">
+            <article class="accordion_content_postres">
                 <div class="items_postres">
                     <ul class="lista_items">
                         <li>Panqueques con dulce de leche</li>
@@ -151,11 +152,11 @@
             </article>
         </section>
 
-        <section class="acordion_pastas" id="pastas">
-            <button class="boton_pastas" aria-expanded="false">
+        <section class="accordion_pastas" id="pastas">
+            <button class="accordion_btn_pastas" aria-expanded="false">
                 <h2>Pastas</h2>
             </button>
-            <article class="contenido_pastas">
+            <article class="accordion_content_pastas">
                 <div class="items_pastas">
                     <ul class="lista_items">
                         <li>Ñoquis de papa</li>
@@ -177,11 +178,11 @@
             </article>
         </section>
 
-        <section class="acordion_mariscos" id="acordion_mariscos">
-            <button class="boton_mariscos" aria-expanded="false">
+        <section class="accordion_mariscos" id="mariscos">
+            <button class="accordion_btn_mariscos" aria-expanded="false">
                 <h2>Mariscos</h2>
             </button>
-            <article class="contenido_mariscos">
+            <article class="accordion_content_mariscos">
                 <div class="items_mariscos">
                     <ul class="lista_items">
                         <li>Rana a la provenzal </li>
@@ -242,14 +243,12 @@
                     </ul>
                 </div>
             </article>
-
-
-
-            <section class="acordion_bebidas" id="bebidas">
-                <button class="boton_bebidas" aria-expanded="false">
+        </section>
+            <section class="accordion_bebidas" id="bebidas">
+                <button class="accordion_btn_bebidas" aria-expanded="false">
                     <h2>Bebidas</h2>
                 </button>
-                <article class="contenido_bebidas">
+                <article class="accordion_content_bebidas">
                     <div class="items_bebidas">
                         <ul class="lista_items">
                             <li>Gaseosa línea Coca Cola</li>
@@ -282,8 +281,8 @@
     <footer>
     </footer>
     <script>
-        const btn = document.querySelector('.accordion_btn');
-        const content = document.querySelector('.accordion_content');
+        const btn = document.querySelector('.accordion_btn_entradas');
+        const content = document.querySelector('.accordion_content_entradas');
 
         btn.addEventListener('click', () => {
             const expanded = btn.getAttribute('aria-expanded') === 'true';
