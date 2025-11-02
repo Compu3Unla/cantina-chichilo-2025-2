@@ -13,6 +13,28 @@
 
 body {
   background-color: #FAF9E7;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-family: "Petrona", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+p {
+  font-family: 'Baloo 2', sans-serif;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+h6 {
+  font-family: Petrona;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 2rem;
 }
 
 /* HEADER */
@@ -36,7 +58,7 @@ nav {
 }
 
 /*HERO*/
-#hero{
+#hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,7 +96,7 @@ nav {
   padding: 10px 20px 10px 20px;
 }
 
-#donde-encontrarnos{
+#donde-encontrarnos {
   background-color: #568A35;
   padding: 100px;
 }
@@ -111,56 +133,122 @@ footer ul {
   text-decoration: none;
 }
 
-.accordion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ff4500;
-  border-radius: 40px;
-  margin: 2rem auto;
-  max-width: 600px;
+/*menu*/
+
+main.menu {
+  margin: 0px 0px 50px 50px;
 }
 
-.accordion_btn {
-  background: #ff4500;
-  border: none;
-  padding: .8rem 1.8rem;
-  border-radius: 40px;
-  height: 100px;
-  cursor: pointer;
-  transition: background .3s ease;
-  width: 600px;
+/*acordeones*/
+
+
+
+.accordion_content_entradas.show {
+  background-color: #F5DFA5;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  padding: 0 16px 16px 16px;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 0px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+
+main.menu {
+  margin: 0px 50px 50px 50px;
+}
+
+
+ul.lista_items {
+  list-style-type: none;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  font-family: 'Baloo 2', sans-serif;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+ul.lista_precios {
+  list-style-type: none;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  font-family: 'petrona', sans-serif;
+  line-height: 2rem;
+  font-size: 1rem;
+  text-align: right;
+}
+
+/*----NOSOTROS----*/
+.nosotros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: center;
+  gap: 50px;
+  padding: 1.5rem 0;
 }
 
-.accordion_btn:hover {
-  background: #7C8B23;
-}
-
-.accordion_content {
-  width: 500px;
-  max-height: 0;
-  overflow: hidden;
-  border-radius: 20px;
-  margin: 0 20px;
-  padding: 0 1.5rem;
-  transition: max-height 0.4s ease;
-}
-
-.accordion_content p {
-  font-family: 'Bitter', serif;
-  font-size: 1.125rem;
-  color: #fcd1f6;
-  margin: 10px;
-}
-
-.accordion_content.show {
-  background-color: #ff4500;
-  border-radius: 40px;
+.img-nosotros {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 8px;
+  padding-top: 10px;
+}
+
+.texto-nosotros p, h2 {
+  color: #151614;
+  max-width: 383px;
+}
+
+.texto-nosotros {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nosotros-verde {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  padding: 2.19rem 0;
+  background-color: #568A35;
+}
+
+.texto-nosotros-verde {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.texto-nosotros-verde p {
+  color: #FAF9E7;
+  max-width: 400px;
+}
+/* Esto lo puse separado porque no se porque si lo hacia junto se me modificaba el h2 de las otras secciones */
+.texto-nosotros-verde h2{
+  color: #FAF9E7;
+}
+
+.img-nosotros-verde h6{
+  color: #FAF9E7;
+}
+
+.img-nosotros-verde {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 8px;
+  padding-top: 15px;
 }
