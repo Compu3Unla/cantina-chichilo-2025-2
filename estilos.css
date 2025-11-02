@@ -17,8 +17,18 @@ body {
 }
 
 h2 {
+  color: #FAF9E7;
+text-align: center;
+font-family: Petrona;
+font-size: 3rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+h3 {
   font-family: "Petrona", serif;
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: bold;
   font-style: italic;
 }
@@ -31,7 +41,7 @@ p {
 
 h6 {
   font-family: Petrona;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-style: italic;
   font-weight: 400;
   line-height: 2rem;
@@ -193,24 +203,17 @@ ul.lista_precios {
 }
 
 .img-nosotros {
-  display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
   justify-content: left;
   gap: 8px;
   padding-top: 10px;
 }
 
-.texto-nosotros p, h2 {
-  color: #151614;
-  max-width: 383px;
-}
-
 .texto-nosotros {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
+  max-width: 383px;
 }
 
 .nosotros-verde {
@@ -227,27 +230,26 @@ ul.lista_precios {
 .texto-nosotros-verde {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
+  max-width: 400px;
 }
 
 .texto-nosotros-verde p {
   color: #FAF9E7;
-  max-width: 400px;
 }
-/* Esto lo puse separado porque no se porque si lo hacia junto se me modificaba el h2 de las otras secciones */
-.texto-nosotros-verde h2{
+
+.texto-nosotros-verde h3 {
   color: #FAF9E7;
 }
 
-.img-nosotros-verde h6{
+.img-nosotros-verde h6 {
   color: #FAF9E7;
 }
+
+
 
 .img-nosotros-verde {
-  display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
   justify-content: left;
   gap: 8px;
   padding-top: 15px;
