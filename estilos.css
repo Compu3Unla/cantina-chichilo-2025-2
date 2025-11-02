@@ -70,7 +70,10 @@ nav {
 /*HERO*/
 #hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  background-color: aqua;
+  /*color momentaneo-no alcanzo a ver donde empiezan las cosas-luego de que se aplique la imagen se borra*/
 }
 
 /*INDEX*/
@@ -94,6 +97,13 @@ nav {
 #las-especialidades {
   display: flex;
   gap: 20px;
+}
+
+.botones{
+  background-color: #274635;
+  color: #FAF9E7;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 #donde-encontrarnos {
