@@ -77,14 +77,42 @@ nav {
   padding: 10px;
 }
 
-/*HEROS*/
+/*INDEX*/
 #hero-index {
   display: flex;
-  flex-direction: ;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-/*INDEX*/
+video{
+  position: relative;
+}
+
+#overlay{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#overlay h3{
+  color: #FAF9E7;
+}
+
+#opacidad-video{
+  position: absolute;
+  width: 1920px;
+  height: 428px;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+#hero-index video{
+  display: block;
+}
 
 .imagen-con-descripcion {
   display: flex;
@@ -99,7 +127,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin: 30px;
+  margin: 60px;
 }
 
 #las-especialidades {
