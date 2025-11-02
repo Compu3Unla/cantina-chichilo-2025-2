@@ -77,7 +77,7 @@ nav {
   padding: 10px;
 }
 
-/*HERO-INDEX*/
+/*HEROS*/
 #hero-index {
   display: flex;
   flex-direction: ;
@@ -151,15 +151,25 @@ footer ul {
   text-decoration: none;
 }
 
-/*menu*/
+/*MENU*/
+
+#hero-menu {
+      background-image: url('img/menu/menu-img.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 130px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3px;
+}
 
 main.menu {
   margin: 0px 0px 50px 50px;
 }
 
 /*acordeones*/
-
-
 
 .accordion_content_entradas.show {
   background-color: #F5DFA5;
@@ -199,8 +209,22 @@ ul.lista_precios {
   text-align: right;
 }
 
+/*----RESERVAS----*/
+#hero-reservas {
+      background-image: url('img/reservas/reserva-img.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 130px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3px;
+}
+
+
 /*----NOSOTROS----*/
-.hero-nosotros {
+#hero-nosotros {
       background-image: url('img/nosotros/reserva.jpg');
       background-size: cover;
       background-position: center;
