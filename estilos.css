@@ -13,6 +13,7 @@
 
 body {
   background-color: #FAF9E7;
+  scroll-behavior: smooth;
 }
 
 h2 {
@@ -20,6 +21,20 @@ h2 {
   font-size: 3rem;
   font-weight: bold;
   font-style: italic;
+}
+
+p {
+  font-family: 'Baloo 2', sans-serif;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+h6 {
+  font-family: Petrona;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 2rem;
 }
 
 /* HEADER */
@@ -43,7 +58,7 @@ nav {
 }
 
 /*HERO*/
-#hero{
+#hero {
   display: flex;
   flex-direction: ;
   align-items: center;
@@ -72,7 +87,7 @@ nav {
   gap: 20px;
 }
 
-#donde-encontrarnos{
+#donde-encontrarnos {
   background-color: #568A35;
   padding: 100px;
 }
@@ -108,7 +123,6 @@ footer ul {
   list-style: none;
   text-decoration: none;
 }
- 
 
 /*menu*/
 
@@ -158,3 +172,74 @@ ul.lista_precios {
   text-align: right;
 }
 
+/*----NOSOTROS----*/
+.nosotros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  padding: 1.5rem 0;
+}
+
+.img-nosotros {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 8px;
+  padding-top: 10px;
+}
+
+.texto-nosotros p, h2 {
+  color: #151614;
+  max-width: 383px;
+}
+
+.texto-nosotros {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nosotros-verde {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  padding: 2.19rem 0;
+  background-color: #568A35;
+}
+
+.texto-nosotros-verde {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.texto-nosotros-verde p {
+  color: #FAF9E7;
+  max-width: 400px;
+}
+/* Esto lo puse separado porque no se porque si lo hacia junto se me modificaba el h2 de las otras secciones */
+.texto-nosotros-verde h2{
+  color: #FAF9E7;
+}
+
+.img-nosotros-verde h6{
+  color: #FAF9E7;
+}
+
+.img-nosotros-verde {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 8px;
+  padding-top: 15px;
+}
