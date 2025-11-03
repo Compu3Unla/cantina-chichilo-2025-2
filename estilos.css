@@ -127,7 +127,7 @@ video {
 
 #opacidad-video {
   position: absolute;
-  width: 1920px;
+  width: 100%;
   height: 428px;
   background-color: black;
   opacity: 0.4;
@@ -203,6 +203,22 @@ video {
   justify-content: center;
   gap: 60px;
   margin: 30px;
+}
+
+#datos p{
+  font-weight: bold;
+}
+
+#texto-color-1 {
+  color: #D83222;
+}
+
+#texto-color-2{
+  color: #274635;
+}
+
+#texto-color-3{
+  color: #7C1A0F;
 }
 
 /*-----MENÚ-----*/
