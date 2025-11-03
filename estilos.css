@@ -345,5 +345,76 @@ footer ul {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  list-style-type: none;
+}
+
+/*RESERVAS*/
+
+.reservas {
+  background-image: url(img/mantel.svg);
+}
+
+.reservas-contenedor {
+  display: flex;
+  padding: 40px;
+}
+
+.input_group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reservas-alergias{
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+
+.si, .no, .enviar {
+  border-radius: 71px;
+  padding: 15px, 15px, 15px, 15px;
+  border: 2px solid black;
+  background-color: #FAF9E7;
+  font-size: 1.2em;
+}
+
+.si, .enviar:hover {
+  background-color: #274635;
+  color: white;
+  border: 2px solid #274635;
+}
+
+.no:hover {
+  background-color: #7C1A0F;
+  color: white;
+  border: 2px solid #7C1A0F;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #FAF9E7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+}
+
+textarea {
+  resize: both;
+}
+
+.fin-formulario{
+  display: flex;
+  justify-content: flex-end;
 }

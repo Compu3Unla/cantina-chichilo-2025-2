@@ -16,14 +16,11 @@
 
 <body>
     <header>
-        <a href="index.html"><img class="icono" src="img/reduccion.svg" alt="logo-chichilo" width="63px"
-                height="50px"></a>
-        <nav>
-            <ul>
-            <li><a href="menu.html">MENU</a></li>
-            <li><a href="reservas.html">RESERVAS</a></li>
-            <li><a href="nosotros.html">NOSOTROS</a></li>
-            </ul>
+        <a href="index.html"><img class="icono" src="img/reduccion.svg" alt="logo-chichilo" width="63px" height="50px"></a>
+        <nav class="navegador">
+            <a href="menu.html">MENÚ</a>
+            <a href="reservas.html">RESERVAS</a>
+            <a href="nosotros.html">NOSOTROS</a>
         </nav>
     </header>
 
@@ -32,7 +29,40 @@
             <h2>¡Reservá ahora!</h2>
             <h4>Y vení a conocer nuestra cantina</h4>
         </section>
-        <p>Realiza tu reserva y disfruta de una experiencia única en Cantina Chichilo.</p>
+        <p>Jueves y viernes: 20.30 - 00hs</p>
+        <p>Sábados y domingos: 12.30 - 14.30hs</p>
+        <section class="reservas">
+                <div class="reservas-contenedor">
+                    <form  method="post" action="mailto:cantinachichilo@gmail.com?subject=Email enviado desde página web" enctype="text/plain">
+                        <div class="form-fields">
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" id="nombre" name="nombre" maxlength="30" placeholder="Nombre" required>
+                                    <label for="phone">Teléfono:</label>
+                                    <input type="tel" id="teléfono" name="teléfono" maxlength="11" placeholder="(000)00000000" required>
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" placeholder="Email" required>
+                                    <label for="text">Cantidad de comensales:</label>
+                                    <input type="text" id="cantidad" name="cantidad" maxlength="2" placeholder="4-10 personas" required>
+                                <div class="reservas-alergias">
+                                    <p>¿Alergías, celiaquías, intolerancias?</p>
+                                    <button class="si">SI</button>
+                                    <button class="no">NO</button>
+                                </div>
+                                <div class="input-group">
+                                    <label for="message">Comentarios:</label>
+                                    <textarea id="message" name="message" maxlength="600" placeholder="Escribe tu comentario" required></textarea>
+                                </div>
+                                <div class="fin-formulario">
+                                    <button class="enviar" type="submit">Enviar</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        </section>
     </main>
 
     <footer>
