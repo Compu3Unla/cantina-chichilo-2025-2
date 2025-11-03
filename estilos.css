@@ -71,10 +71,36 @@ header {
   margin-right: 15px;
 }
 
-nav {
+nav ul {
   display: flex;
-  gap: 100px;
+  flex-direction: row;
+  gap: 180px;
   padding: 10px;
+  list-style-type: none;
+}
+
+nav a{
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+nav a::after{
+  content: "";
+position: absolute;
+width: 0;
+height: 3px;
+display: block;
+margin-top: 0px;
+left: 0;
+background: #D83222;
+border-radius: 50px;
+transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after{
+  width: 100%;
+  color: #D83222;
 }
 
 /*INDEX*/
@@ -313,7 +339,7 @@ footer {
   padding: 7px 27px;
 }
 
-.redes {
+footer ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -392,4 +418,3 @@ textarea {
   display: flex;
   justify-content: flex-end;
 }
-
