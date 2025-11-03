@@ -165,7 +165,7 @@ video {
   padding: 10px 20px 10px 20px;
 }
 
-.botones a{
+.botones a {
   color: #FAF9E7;
 }
 
@@ -228,45 +228,45 @@ main.menu {
 /*---entradas---*/
 
 .accordion_entradas {
-   display: flex;
-   align-items: flex-start;
-   background-color: rgb(245, 223, 165);
-   max-width: 30%;
-   flex-direction: column;
-   padding: 0px;
+  display: flex;
+  align-items: flex-start;
+  background-color: rgb(245, 223, 165);
+  max-width: 30%;
+  flex-direction: column;
+  padding: 0px;
 }
 
-  .accordion_btn_entradas {
-   height: 200px;
-   cursor: pointer;
-   width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background: rgb(245, 223, 165);
-   border-width: initial;
-   border-style: none;
-   border-color: initial;
-   border-image: initial;
-   padding: 0.8rem 1.8rem;
-   transition: background 0.3s;
+.accordion_btn_entradas {
+  height: 200px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(245, 223, 165);
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  padding: 0.8rem 1.8rem;
+  transition: background 0.3s;
 
-  }
+}
 
-  .accordion_content_entradas {
-   max-height: 0px;
-   display: flex;
-   flex-direction: row;
-   align-items: flex-start;
-   flex-wrap: nowrap;
-   width: 100%;
-   justify-content: space-between;
-   box-sizing: border-box;
-   overflow: hidden;
-   transition: max-height 0.4s;
-   margin: 0px;
-   padding: 0px 16px;
-  }
+.accordion_content_entradas {
+  max-height: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.4s;
+  margin: 0px;
+  padding: 0px 16px;
+}
 
 
 .accordion_content_entradas.show {
@@ -281,47 +281,48 @@ main.menu {
   justify-content: space-between;
   box-sizing: border-box;
 }
+
 /*---minutas---*/
 .accordion_minutas {
-   display: flex;
-   align-items: flex-start;
-   background-color: rgb(245, 223, 165);
-   max-width: 30%;
-   flex-direction: column;
-   padding: 0px;
+  display: flex;
+  align-items: flex-start;
+  background-color: rgb(245, 223, 165);
+  max-width: 30%;
+  flex-direction: column;
+  padding: 0px;
 }
 
-  .accordion_btn_minutas {
-   height: 200px;
-   cursor: pointer;
-   width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background: rgb(245, 223, 165);
-   border-width: initial;
-   border-style: none;
-   border-color: initial;
-   border-image: initial;
-   padding: 0.8rem 1.8rem;
-   transition: background 0.3s;
+.accordion_btn_minutas {
+  height: 200px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(245, 223, 165);
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  padding: 0.8rem 1.8rem;
+  transition: background 0.3s;
 
-  }
+}
 
-  .accordion_content_minutas {
-   max-height: 0px;
-   display: flex;
-   flex-direction: row;
-   align-items: flex-start;
-   flex-wrap: nowrap;
-   width: 100%;
-   justify-content: space-between;
-   box-sizing: border-box;
-   overflow: hidden;
-   transition: max-height 0.4s;
-   margin: 0px;
-   padding: 0px 16px;
-  }
+.accordion_content_minutas {
+  max-height: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.4s;
+  margin: 0px;
+  padding: 0px 16px;
+}
 
 
 .accordion_content_minutas.show {
@@ -340,45 +341,45 @@ main.menu {
 
 /*---postres---*/
 .accordion_postres {
-   display: flex;
-   align-items: flex-start;
-   background-color: rgb(245, 223, 165);
-   max-width: 30%;
-   flex-direction: column;
-   padding: 0px;
+  display: flex;
+  align-items: flex-start;
+  background-color: rgb(245, 223, 165);
+  max-width: 30%;
+  flex-direction: column;
+  padding: 0px;
 }
 
-  .accordion_btn_postres {
-   height: 200px;
-   cursor: pointer;
-   width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background: rgb(245, 223, 165);
-   border-width: initial;
-   border-style: none;
-   border-color: initial;
-   border-image: initial;
-   padding: 0.8rem 1.8rem;
-   transition: background 0.3s;
+.accordion_btn_postres {
+  height: 200px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(245, 223, 165);
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  padding: 0.8rem 1.8rem;
+  transition: background 0.3s;
 
-  }
+}
 
-  .accordion_content_postres {
-   max-height: 0px;
-   display: flex;
-   flex-direction: row;
-   align-items: flex-start;
-   flex-wrap: nowrap;
-   width: 100%;
-   justify-content: space-between;
-   box-sizing: border-box;
-   overflow: hidden;
-   transition: max-height 0.4s;
-   margin: 0px;
-   padding: 0px 16px;
-  }
+.accordion_content_postres {
+  max-height: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.4s;
+  margin: 0px;
+  padding: 0px 16px;
+}
 
 
 .accordion_content_postres.show {
@@ -396,45 +397,45 @@ main.menu {
 
 /*---pastas---*/
 .accordion_pastas {
-   display: flex;
-   align-items: flex-start;
-   background-color: rgb(245, 223, 165);
-   max-width: 30%;
-   flex-direction: column;
-   padding: 0px;
+  display: flex;
+  align-items: flex-start;
+  background-color: rgb(245, 223, 165);
+  max-width: 30%;
+  flex-direction: column;
+  padding: 0px;
 }
 
-  .accordion_btn_pastas {
-   height: 200px;
-   cursor: pointer;
-   width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background: rgb(245, 223, 165);
-   border-width: initial;
-   border-style: none;
-   border-color: initial;
-   border-image: initial;
-   padding: 0.8rem 1.8rem;
-   transition: background 0.3s;
+.accordion_btn_pastas {
+  height: 200px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(245, 223, 165);
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  padding: 0.8rem 1.8rem;
+  transition: background 0.3s;
 
-  }
+}
 
-  .accordion_content_pastas {
-   max-height: 0px;
-   display: flex;
-   flex-direction: row;
-   align-items: flex-start;
-   flex-wrap: nowrap;
-   width: 100%;
-   justify-content: space-between;
-   box-sizing: border-box;
-   overflow: hidden;
-   transition: max-height 0.4s;
-   margin: 0px;
-   padding: 0px 16px;
-  }
+.accordion_content_pastas {
+  max-height: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.4s;
+  margin: 0px;
+  padding: 0px 16px;
+}
 
 
 .accordion_content_pastas.show {
@@ -451,45 +452,45 @@ main.menu {
 }
 
 .accordion_mariscos {
-   display: flex;
-   align-items: flex-start;
-   background-color: rgb(245, 223, 165);
-   max-width: 30%;
-   flex-direction: column;
-   padding: 0px;
+  display: flex;
+  align-items: flex-start;
+  background-color: rgb(245, 223, 165);
+  max-width: 30%;
+  flex-direction: column;
+  padding: 0px;
 }
 
-  .accordion_btn_mariscos {
-   height: 200px;
-   cursor: pointer;
-   width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background: rgb(245, 223, 165);
-   border-width: initial;
-   border-style: none;
-   border-color: initial;
-   border-image: initial;
-   padding: 0.8rem 1.8rem;
-   transition: background 0.3s;
+.accordion_btn_mariscos {
+  height: 200px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(245, 223, 165);
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  padding: 0.8rem 1.8rem;
+  transition: background 0.3s;
 
-  }
+}
 
-  .accordion_content_mariscos {
-   max-height: 0px;
-   display: flex;
-   flex-direction: row;
-   align-items: flex-start;
-   flex-wrap: nowrap;
-   width: 100%;
-   justify-content: space-between;
-   box-sizing: border-box;
-   overflow: hidden;
-   transition: max-height 0.4s;
-   margin: 0px;
-   padding: 0px 16px;
-  }
+.accordion_content_mariscos {
+  max-height: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.4s;
+  margin: 0px;
+  padding: 0px 16px;
+}
 
 
 .accordion_content_mariscos.show {
@@ -506,45 +507,45 @@ main.menu {
 }
 
 .accordion_bebidas {
-   display: flex;
-   align-items: flex-start;
-   background-color: rgb(245, 223, 165);
-   max-width: 30%;
-   flex-direction: column;
-   padding: 0px;
+  display: flex;
+  align-items: flex-start;
+  background-color: rgb(245, 223, 165);
+  max-width: 30%;
+  flex-direction: column;
+  padding: 0px;
 }
 
-  .accordion_btn_bebidas {
-   height: 200px;
-   cursor: pointer;
-   width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background: rgb(245, 223, 165);
-   border-width: initial;
-   border-style: none;
-   border-color: initial;
-   border-image: initial;
-   padding: 0.8rem 1.8rem;
-   transition: background 0.3s;
+.accordion_btn_bebidas {
+  height: 200px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(245, 223, 165);
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  padding: 0.8rem 1.8rem;
+  transition: background 0.3s;
 
-  }
+}
 
-  .accordion_content_bebidas {
-   max-height: 0px;
-   display: flex;
-   flex-direction: row;
-   align-items: flex-start;
-   flex-wrap: nowrap;
-   width: 100%;
-   justify-content: space-between;
-   box-sizing: border-box;
-   overflow: hidden;
-   transition: max-height 0.4s;
-   margin: 0px;
-   padding: 0px 16px;
-  }
+.accordion_content_bebidas {
+  max-height: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.4s;
+  margin: 0px;
+  padding: 0px 16px;
+}
 
 
 .accordion_content_bebidas.show {
