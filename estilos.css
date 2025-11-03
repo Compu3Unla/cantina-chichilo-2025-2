@@ -161,18 +161,23 @@ video {
 
 .botones {
   background-color: #274635;
-  color: #FAF9E7;
-  border-radius: 20px;
+  border-radius: 50px;
   padding: 10px 20px 10px 20px;
+}
+
+.botones a{
+  color: #FAF9E7;
 }
 
 .donde-encontrarnos {
   background-color: #568A35;
+  background-image: url(img/index/fondo-mapa.svg);
   padding: 100px;
   display: flex;
   flex-direction: row;
   gap: 50px;
   justify-content: center;
+  align-items: center;
 }
 
 .mapa {
