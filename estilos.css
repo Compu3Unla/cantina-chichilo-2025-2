@@ -73,30 +73,30 @@ header {
 .navegador {
   display: flex;
   gap: 80px;
-    flex-direction: row;
+  flex-direction: row;
   list-style-type: none;
 }
 
-nav a{
+nav a {
   text-decoration: none;
   position: relative;
   display: inline-block;
 }
 
-nav a::after{
+nav a::after {
   content: "";
-position: absolute;
-width: 0;
-height: 3px;
-display: block;
-margin-top: 0px;
-left: 0;
-background: #D83222;
-border-radius: 50px;
-transition: width 0.3s ease-in-out;
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 0px;
+  left: 0;
+  background: #D83222;
+  border-radius: 50px;
+  transition: width 0.3s ease-in-out;
 }
 
-nav a:hover::after{
+nav a:hover::after {
   width: 100%;
   color: #D83222;
 }
@@ -166,7 +166,7 @@ video {
   padding: 10px 20px 10px 20px;
 }
 
-#ubicacion {
+.donde-encontrarnos {
   background-color: #568A35;
   padding: 100px;
   display: flex;
@@ -187,10 +187,10 @@ video {
 }
 
 .linea {
-        border-top: 3px solid #151614;
-        width: 85%;
-        border-radius: 100px;
-    }
+  border-top: 3px solid #151614;
+  width: 85%;
+  border-radius: 100px;
+}
 
 #datos {
   display: flex;
@@ -358,7 +358,7 @@ ul.lista_precios {
   margin-bottom: 10px;
 }
 
-.reservas-alergias{
+.reservas-alergias {
   display: flex;
   flex-direction: row;
   padding-top: 20px;
@@ -366,7 +366,9 @@ ul.lista_precios {
   gap: 10px;
 }
 
-.si, .no, .enviar {
+.si,
+.no,
+.enviar {
   border-radius: 71px;
   padding: 15px, 15px, 15px, 15px;
   border: 2px solid black;
@@ -374,7 +376,8 @@ ul.lista_precios {
   font-size: 1.2em;
 }
 
-.si, .enviar:hover {
+.si,
+.enviar:hover {
   background-color: #274635;
   color: white;
   border: 2px solid #274635;
@@ -395,7 +398,8 @@ ul.lista_precios {
   padding-bottom: 20px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   border-radius: 15px;
@@ -408,7 +412,7 @@ textarea {
   resize: both;
 }
 
-.fin-formulario{
+.fin-formulario {
   display: flex;
   justify-content: flex-end;
 }
