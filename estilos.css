@@ -169,7 +169,28 @@ video {
 #ubicacion {
   background-color: #568A35;
   padding: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
 }
+
+.mapa {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FAF9E7;
+  padding: 20px;
+  gap: 7px;
+}
+
+.linea {
+        border-top: 3px solid #151614;
+        width: 85%;
+        border-radius: 100px;
+    }
 
 #datos {
   display: flex;
