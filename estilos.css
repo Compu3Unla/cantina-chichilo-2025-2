@@ -57,8 +57,7 @@ h6 {
   line-height: 2rem;
 }
 
-/* HEADER */
-
+/*-----HEADER-----*/
 header {
   font-size: 18px;
   font-weight: medium;
@@ -71,11 +70,10 @@ header {
   margin-right: 15px;
 }
 
-nav ul {
+.navegador {
   display: flex;
-  flex-direction: row;
-  gap: 180px;
-  padding: 10px;
+  gap: 80px;
+    flex-direction: row;
   list-style-type: none;
 }
 
@@ -103,7 +101,7 @@ nav a:hover::after{
   color: #D83222;
 }
 
-/*INDEX*/
+/*-----INDEX-----*/
 #hero-index {
   display: flex;
   flex-direction: column;
@@ -181,8 +179,7 @@ video{
   margin: 30px;
 }
 
-/*MENU*/
-
+/*-----MENÚ-----*/
 #hero-menu {
   background-image: url('img/menu/menu-img.jpg');
   background-size: cover;
@@ -199,8 +196,7 @@ main.menu {
   margin: 0px 0px 50px 50px;
 }
 
-/*acordeones*/
-
+/*---Acordeones---*/
 .accordion_content_entradas.show {
   background-color: #F5DFA5;
   display: flex;
@@ -214,11 +210,9 @@ main.menu {
   box-sizing: border-box;
 }
 
-
 main.menu {
   margin: 0px 50px 50px 50px;
 }
-
 
 ul.lista_items {
   list-style-type: none;
@@ -239,7 +233,7 @@ ul.lista_precios {
   text-align: right;
 }
 
-/*----RESERVAS----*/
+/*-----RESERVAS-----*/
 #hero-reservas {
   background-image: url('img/reservas/reserva-img.jpg');
   background-size: cover;
@@ -253,7 +247,7 @@ ul.lista_precios {
 }
 
 
-/*----NOSOTROS----*/
+/*-----NOSOTROS-----*/
 #hero-nosotros {
   background-image: url('img/nosotros/reserva.jpg');
   background-size: cover;
@@ -327,28 +321,7 @@ ul.lista_precios {
   padding-top: 15px;
 }
 
-/*----FOOTER----*/
-footer {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  max-width: auto;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 7px 27px;
-}
-
-footer ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-/*RESERVAS*/
-
+/*-----RESERVAS-----*/
 .reservas {
   background-image: url(img/mantel.svg);
 }
@@ -417,4 +390,25 @@ textarea {
 .fin-formulario{
   display: flex;
   justify-content: flex-end;
+}
+
+/*-----FOOTER-----*/
+footer {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  max-width: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 27px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style-type: none;
 }
