@@ -109,11 +109,11 @@ nav a:hover::after{
   justify-content: center;
 }
 
-video{
+video {
   position: relative;
 }
 
-#overlay{
+#overlay {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -121,11 +121,11 @@ video{
   gap: 20px;
 }
 
-#overlay h3{
+#overlay h3 {
   color: #FAF9E7;
 }
 
-#opacidad-video{
+#opacidad-video {
   position: absolute;
   width: 1920px;
   height: 428px;
@@ -134,7 +134,7 @@ video{
   z-index: 0;
 }
 
-#hero-index video{
+#hero-index video {
   display: block;
 }
 
@@ -166,7 +166,7 @@ video{
   padding: 10px 20px 10px 20px;
 }
 
-#donde-encontrarnos {
+#ubicacion {
   background-color: #568A35;
   padding: 100px;
   display: flex;
