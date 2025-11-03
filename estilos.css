@@ -311,10 +311,11 @@ footer {
   padding: 7px 27px;
 }
 
-.redes {
+footer ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 30px;
+  list-style-type: none;
 }
