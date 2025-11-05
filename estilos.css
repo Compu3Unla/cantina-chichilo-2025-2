@@ -249,7 +249,7 @@ nav a:hover::after {
 
 /*---Acordeones---*/
 
-/*---entradas---*/
+/*---Acordeones---*/
 
 .seccion_menu {
   display: flex;
@@ -262,12 +262,14 @@ nav a:hover::after {
   margin: 0 100px 0 100px;
 }
 
+/*---entradas---*/
 
 .accordion_entradas {
   display: flex;
   align-items: flex-start;
   background-color: rgb(245, 223, 165);
-  max-width: 30%;
+  max-width: 50%;
+  width: 420px;
   flex-direction: column;
   padding: 0px;
 }
@@ -323,7 +325,8 @@ nav a:hover::after {
   display: flex;
   align-items: flex-start;
   background-color: rgb(245, 223, 165);
-  max-width: 30%;
+  max-width: 50%;
+  width: 420px;
   flex-direction: column;
   padding: 0px;
 }
@@ -380,7 +383,8 @@ nav a:hover::after {
   display: flex;
   align-items: flex-start;
   background-color: rgb(245, 223, 165);
-  max-width: 30%;
+  max-width: 50%;
+  width: 420px;
   flex-direction: column;
   padding: 0px;
 }
@@ -436,7 +440,8 @@ nav a:hover::after {
   display: flex;
   align-items: flex-start;
   background-color: rgb(245, 223, 165);
-  max-width: 30%;
+  max-width: 50%;
+  width: 420px;
   flex-direction: column;
   padding: 0px;
 }
@@ -488,6 +493,16 @@ nav a:hover::after {
 }
 
 /*-----mariscos-----*/
+
+.accordion_mariscos {
+  display: flex;
+  align-items: flex-start;
+  background-color: rgb(245, 223, 165);
+  max-width: 50%;
+  width: 420px;
+  flex-direction: column;
+  padding: 0px;
+}
 
 .accordion_btn_mariscos {
   height: 200px;
@@ -541,7 +556,8 @@ nav a:hover::after {
   display: flex;
   align-items: flex-start;
   background-color: rgb(245, 223, 165);
-  max-width: 30%;
+  max-width: 50%;
+  width: 420px;
   flex-direction: column;
   padding: 0px;
 }
