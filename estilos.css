@@ -90,6 +90,14 @@ h6 {
   line-height: 2rem;
 }
 
+h7 {
+  font-family: Petrona;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: auto;
+}
+
 /*-----HEADER-----*/
 header {
   font-size: 18px;
@@ -263,6 +271,33 @@ nav a:hover::after {
 
 #texto-color-3 {
   color: #7C1A0F;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-direction: inline;
+  padding: 50px;
+}
+
+.review {
+  margin: 0;
+  width: 310px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.cuerpo-review {
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /*-----MENÚ-----*/
