@@ -8,8 +8,11 @@ Quisimos proponer que se combinara el ambiente italiano, que es cálido y famili
 
 Integrantes: 
 • Luciana Contreras Contursi | Visual Studio Code (1920x1080px)
+
 • Martina Malchevski | Visual Studio Code (1366x768px)
+
 • Julieta Eliana Paez Varela | Visual Studio Code (1280x1024px)
+
 • Jazmin Rodriguez Laganá | Visual Studio Code (1512x982px)
 
 Link del figma: https://www.figma.com/design/TmGJcJLXnD4NXpVyICUoIf/Grupo-2---Chichilo?node-id=1-2&t=sg13B6MMaQMnwk8N-1
