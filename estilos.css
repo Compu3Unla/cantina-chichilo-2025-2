@@ -246,13 +246,22 @@ nav a:hover::after {
   gap: 3px;
 }
 
-main.menu {
-  margin: 0px 0px 50px 50px;
-}
 
 /*---Acordeones---*/
 
 /*---entradas---*/
+
+.seccion_menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 2.5rem 0;
+  margin: 0 100px 0 100px;
+}
+
 
 .accordion_entradas {
   display: flex;
@@ -478,14 +487,7 @@ main.menu {
   box-sizing: border-box;
 }
 
-.accordion_mariscos {
-  display: flex;
-  align-items: flex-start;
-  background-color: rgb(245, 223, 165);
-  max-width: 30%;
-  flex-direction: column;
-  padding: 0px;
-}
+/*-----mariscos-----*/
 
 .accordion_btn_mariscos {
   height: 200px;
@@ -532,6 +534,8 @@ main.menu {
   justify-content: space-between;
   box-sizing: border-box;
 }
+
+/*-----bebidas-----*/
 
 .accordion_bebidas {
   display: flex;
@@ -589,15 +593,7 @@ main.menu {
 }
 
 
-
-
-
-
-
-main.menu {
-  margin: 0px 50px 50px 50px;
-}
-
+/*-----listas-----*/
 ul.lista_items {
   list-style-type: none;
   padding: 0 0 0 0;
