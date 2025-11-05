@@ -219,9 +219,6 @@ video {
   gap: 3px;
 }
 
-
-/*---Acordeones---*/
-
 /*---Acordeones---*/
 
 .seccion_menu {
@@ -267,30 +264,22 @@ video {
 .accordion_content_entradas {
   max-height: 0px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  width: 100%;
-  justify-content: space-between;
-  box-sizing: border-box;
   overflow: hidden;
   transition: max-height 0.4s;
   margin: 0px;
   padding: 0px 16px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 
 .accordion_content_entradas.show {
-  background-color: #F5DFA5;
-  display: flex;
-  flex-direction: row;
-  padding: 0 16px 16px 16px;
-  align-items: flex-start;
-  flex-wrap: nowrap;
   width: 100%;
   margin: 0px;
+  padding: 1rem;
+  background-color: #F5DFA5;
+  display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
 }
 
 /*---minutas---*/
@@ -324,32 +313,22 @@ video {
 .accordion_content_minutas {
   max-height: 0px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  width: 100%;
-  justify-content: space-between;
-  box-sizing: border-box;
   overflow: hidden;
   transition: max-height 0.4s;
   margin: 0px;
   padding: 0px 16px;
+  justify-content: space-between;
+  width: 100%;
 }
-
 
 .accordion_content_minutas.show {
-  background-color: #F5DFA5;
-  display: flex;
-  flex-direction: row;
-  padding: 0 16px 16px 16px;
-  align-items: flex-start;
-  flex-wrap: nowrap;
   width: 100%;
   margin: 0px;
+  padding: 1rem;
+  background-color: #F5DFA5;
+  display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
 }
-
 
 /*---postres---*/
 .accordion_postres {
@@ -382,30 +361,21 @@ video {
 .accordion_content_postres {
   max-height: 0px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  width: 100%;
-  justify-content: space-between;
-  box-sizing: border-box;
   overflow: hidden;
   transition: max-height 0.4s;
   margin: 0px;
   padding: 0px 16px;
+  justify-content: space-between;
+  width: 100%;
 }
 
-
 .accordion_content_postres.show {
-  background-color: #F5DFA5;
-  display: flex;
-  flex-direction: row;
-  padding: 0 16px 16px 16px;
-  align-items: flex-start;
-  flex-wrap: nowrap;
   width: 100%;
   margin: 0px;
+  padding: 1rem;
+  background-color: #F5DFA5;
+  display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
 }
 
 /*---pastas---*/
@@ -439,30 +409,22 @@ video {
 .accordion_content_pastas {
   max-height: 0px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  width: 100%;
-  justify-content: space-between;
-  box-sizing: border-box;
   overflow: hidden;
   transition: max-height 0.4s;
   margin: 0px;
   padding: 0px 16px;
+  justify-content: space-between;
+  width: 100%;
+
 }
 
-
 .accordion_content_pastas.show {
-  background-color: #F5DFA5;
-  display: flex;
-  flex-direction: row;
-  padding: 0 16px 16px 16px;
-  align-items: flex-start;
-  flex-wrap: nowrap;
   width: 100%;
   margin: 0px;
+  padding: 1rem;
+  background-color: #F5DFA5;
+  display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
 }
 
 /*-----mariscos-----*/
@@ -497,30 +459,21 @@ video {
 .accordion_content_mariscos {
   max-height: 0px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  width: 100%;
-  justify-content: space-between;
-  box-sizing: border-box;
   overflow: hidden;
   transition: max-height 0.4s;
   margin: 0px;
   padding: 0px 16px;
+  justify-content: space-between;
+  width: 100%;
 }
 
-
 .accordion_content_mariscos.show {
-  background-color: #F5DFA5;
-  display: flex;
-  flex-direction: row;
-  padding: 0 16px 16px 16px;
-  align-items: flex-start;
-  flex-wrap: nowrap;
   width: 100%;
   margin: 0px;
+  padding: 1rem;
+  background-color: #F5DFA5;
+  display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
 }
 
 /*-----bebidas-----*/
@@ -555,32 +508,25 @@ video {
 .accordion_content_bebidas {
   max-height: 0px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  width: 100%;
-  justify-content: space-between;
-  box-sizing: border-box;
   overflow: hidden;
   transition: max-height 0.4s;
   margin: 0px;
   padding: 0px 16px;
+  justify-content: space-between;
+  width: 100%;
+
 }
 
 
 .accordion_content_bebidas.show {
-  background-color: #F5DFA5;
-  display: flex;
-  flex-direction: row;
-  padding: 0 16px 16px 16px;
-  align-items: flex-start;
-  flex-wrap: nowrap;
   width: 100%;
   margin: 0px;
+  padding: 1rem;
+  background-color: #F5DFA5;
+  display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
-}
 
+}
 
 /*-----listas-----*/
 ul.lista_items {
@@ -596,7 +542,8 @@ ul.lista_precios {
   list-style-type: none;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  font-family: 'petrona', sans-serif;
+  font-family: 'petrona', serif;
+  font-weight: 400;
   line-height: 2rem;
   font-size: 1rem;
   text-align: right;
