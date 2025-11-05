@@ -873,17 +873,32 @@ textarea {
 }
 
 #foto-2 {
-	background-image: url("img/nosotros/nosotros-4.jpg");
+	background-image: url("img/nosotros/nosotros-5.jpg");
 }
 
 #foto-3 {
-	background-image: url("img/nosotros/nosotros-4.jpg");
+	background-image: url("img/nosotros/nosotros-6.jpg");
 }
 
 #foto-4 {
-	background-image: url("img/nosotros/nosotros-4.jpg");
+	background-image: url("img/nosotros/nosotros-7.jpg");
 }
 
+#foto-5 {
+	background-image: url("img/nosotros/nosotros-8.jpg");
+}
+
+#foto-6 {
+	background-image: url("img/nosotros/nosotros-9.jpg");
+}
+
+#foto-7 {
+	background-image: url("img/nosotros/nosotros-10.jpg");
+}
+
+#foto-8 {
+	background-image: url("img/nosotros/nosotros-11.jpg");
+}
 
 /*-----FOOTER-----*/
 
