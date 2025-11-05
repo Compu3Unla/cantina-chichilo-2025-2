@@ -7,6 +7,7 @@ Este proyecto tiene el objetivo de rediseñar la página web "Cantina Chichilo",
 Quisimos proponer que se combinara el ambiente italiano, que es cálido y familiero, con lo moderno y actual. 
 
 Integrantes: 
+
 • Luciana Contreras Contursi | Visual Studio Code (1920x1080px)
 
 • Martina Malchevski | Visual Studio Code (1366x768px)
