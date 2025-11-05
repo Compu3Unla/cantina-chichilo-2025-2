@@ -281,7 +281,7 @@ nav a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(245, 223, 165);
+  background-image: url(img/menu/entradas.jpg);
   border-width: initial;
   border-style: none;
   border-color: initial;
@@ -338,7 +338,7 @@ nav a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(245, 223, 165);
+  background: url(img/menu/minutas.jpg);
   border-width: initial;
   border-style: none;
   border-color: initial;
@@ -396,7 +396,7 @@ nav a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(245, 223, 165);
+  background-image: url(img/menu/postres.jpg);
   border-width: initial;
   border-style: none;
   border-color: initial;
@@ -453,7 +453,7 @@ nav a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(245, 223, 165);
+  background: url(img/menu/pastas.jpg);
   border-width: initial;
   border-style: none;
   border-color: initial;
@@ -511,7 +511,7 @@ nav a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(245, 223, 165);
+  background: url(img/menu/mariscos.jpg);
   border-width: initial;
   border-style: none;
   border-color: initial;
@@ -569,7 +569,7 @@ nav a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(245, 223, 165);
+  background: url(img/menu/bebidas.jpg);
   border-width: initial;
   border-style: none;
   border-color: initial;
