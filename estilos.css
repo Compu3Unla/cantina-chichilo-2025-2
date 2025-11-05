@@ -11,9 +11,42 @@
   text-decoration: none;
 }
 
+
+/*.intro {
+  position: fixed;
+  inset: 0;
+  background-color: #274635;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 1.5s ease;
+  }
+
+
+.logo-header img {
+  max-width: 40vmin;
+  width: 100%;
+  height: auto;
+  display: block;
+  }
+
+.intro.fade-out {
+  opacity: 0;
+}
+
+.logo-header {
+  position: absolute;
+  top: 41%;
+  left: 33%;
+}
+*/ /* intro en pausa */
+
 body {
   background-color: #FAF9E7;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h2 {
