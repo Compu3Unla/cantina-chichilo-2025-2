@@ -350,31 +350,34 @@
         const content5 = document.querySelector('.accordion_content_mariscos');
         btn5.addEventListener('click', () => {
             const expanded5 = btn5.getAttribute('aria-expanded') === 'true';
+
             // Cambiar estado
             btn5.setAttribute('aria-expanded', !expanded5);
             content5.classList.toggle('show');
-        });
-        // Animar apertura / cierre
-        if (expanded5) {
-            content5.style.maxHeight = '0';
-        } else {
-            content5.style.maxHeight = content5.scrollHeight + 'px';
-        }
 
+            // Animar apertura / cierre
+            if (expanded5) {
+                content5.style.maxHeight = '0';
+            } else {
+                content5.style.maxHeight = content5.scrollHeight + 'px';
+            }
+        });
         const btn6 = document.querySelector('.accordion_btn_bebidas');
         const content6 = document.querySelector('.accordion_content_bebidas');
         btn6.addEventListener('click', () => {
             const expanded6 = btn6.getAttribute('aria-expanded') === 'true';
+
             // Cambiar estado
             btn6.setAttribute('aria-expanded', !expanded6);
             content6.classList.toggle('show');
+
+            // Animar apertura / cierre
+            if (expanded6) {
+                content6.style.maxHeight = '0';
+            } else {
+                content6.style.maxHeight = content6.scrollHeight + 'px';
+            }
         });
-        // Animar apertura / cierre
-        if (expanded6) {
-            content6.style.maxHeight = '0';
-        } else {
-            content6.style.maxHeight = content6.scrollHeight + 'px';
-        }
     </script>
 </body>
 
