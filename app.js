@@ -3,24 +3,22 @@
 localStorage.removeItem("introShown");
 
 const intro = document.querySelector(".intro");
-  const introShown = localStorage.getItem("introShown");
+const introShown = localStorage.getItem("introShown");
 
   if (!introShown) {
 
-    // Muestra la intro por 3.5s antes de iniciar el fade out
-    setTimeout(() => {
-      intro.classList.add("fade-out");
+setTimeout(() => {
+    intro.classList.add("fade-out");
 
-      // Luego de 1s (tiempo de la transición), muestra el contenido
-      setTimeout(() => {
-        intro.style.display = "none";
-        contenido.style.display = "block";
-        document.body.style.overflow = "auto";
-        localStorage.setItem("introShown", "true"); // guarda que ya se mostró
-      }, 1000);
+setTimeout(() => {
+    intro.style.display = "none";
+    contenido.style.display = "block";
+    document.body.style.overflow = "auto";
+    localStorage.setItem("introShown", "true");
+    }, 1000);
     }, 3500);
   } else {
-    // Si ya se mostró antes, no mostrar intro
+
     intro.style.display = "none";
     document.body.style.overflow = "auto";
   }
