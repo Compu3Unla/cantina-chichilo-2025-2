@@ -11,37 +11,36 @@
   text-decoration: none;
 }
 
-
-/*.intro {
+.intro {
   position: fixed;
   inset: 0;
-  background-color: #274635;
   z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 1;
-  transition: opacity 1.5s ease;
-  }
-
-
-.logo-header img {
-  max-width: 40vmin;
   width: 100%;
-  height: auto;
-  display: block;
-  }
+  height: 100%;
+  background: #274635;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-in-out;
+}
 
 .intro.fade-out {
   opacity: 0;
+  pointer-events: none;
 }
 
-.logo-header {
+.intro img{
   position: absolute;
   top: 41%;
-  left: 33%;
+  left: 32%;
+  animation: float 3s ease-in-out infinite;
 }
-*/ /* intro en pausa */
+
+@keyframes float {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(-10px);}
+  100% {transform: translateY(0);}
+}
 
 body {
   background-color: #FAF9E7;
