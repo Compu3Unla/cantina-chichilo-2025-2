@@ -89,6 +89,14 @@ h6 {
   line-height: 2rem;
 }
 
+h7 {
+  font-family: Petrona;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: auto;
+}
+
 /*-----HEADER-----*/
 header {
   font-size: 18px;
@@ -262,6 +270,34 @@ nav a:hover::after {
 
 #texto-color-3 {
   color: #7C1A0F;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-direction: inline;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 60px;
+}
+
+.review {
+  margin: 0;
+  width: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuerpo-review {
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /*-----MENÚ-----*/
@@ -872,17 +908,32 @@ textarea {
 }
 
 #foto-2 {
-	background-image: url("img/nosotros/nosotros-4.jpg");
+	background-image: url("img/nosotros/nosotros-5.jpg");
 }
 
 #foto-3 {
-	background-image: url("img/nosotros/nosotros-4.jpg");
+	background-image: url("img/nosotros/nosotros-6.jpg");
 }
 
 #foto-4 {
-	background-image: url("img/nosotros/nosotros-4.jpg");
+	background-image: url("img/nosotros/nosotros-7.jpg");
 }
 
+#foto-5 {
+	background-image: url("img/nosotros/nosotros-8.jpg");
+}
+
+#foto-6 {
+	background-image: url("img/nosotros/nosotros-9.jpg");
+}
+
+#foto-7 {
+	background-image: url("img/nosotros/nosotros-10.jpg");
+}
+
+#foto-8 {
+	background-image: url("img/nosotros/nosotros-11.jpg");
+}
 
 /*-----FOOTER-----*/
 
