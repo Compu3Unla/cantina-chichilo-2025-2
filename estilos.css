@@ -755,6 +755,10 @@ footer ul {
 /*-----RESPONSIVE-----*/
 @media (max-width: 575px) {
 
+  p {
+    font-size: 0.9rem;
+  }
+
   h2 {
     font-size: 2.2rem;
   }
@@ -765,6 +769,12 @@ footer ul {
 
   h4 {
     font-size: 1rem;
+  }
+
+  body{
+    display: block;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .menu-icono {
@@ -797,16 +807,73 @@ footer ul {
     background-image: url('img/nosotros/cruz.svg');
   }
 
-  nav a {
-    font-size: 24px;
+  main {
+    display: block;
   }
 
-  main {
-    display: flex;
+  /*-----@INDEX-----*/
+
+  #overlay {
+  top: 50%;
+  }
+
+  #overlay img {
+  width: 70%;
+  }
+
+  #nuestras-especialidades{
+  margin: 40px;
+  }
+
+   #las-especialidades {
+    flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
-    flex-direction: column;
+    column-gap: 52px;
     justify-content: center;
   }
+
+  .imagen-con-descripcion img {
+    width: 120px;
+    height: 120px;
+  }
+
+   .donde-encontrarnos {
+    flex-direction: column;
+  }
+
+  .donde-encontrarnos img {
+  display: none;
+  }
+
+  .linea {
+  border-top: 2px solid;
+  margin: 10px 0;
+  }
+
+  #datos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  }
+
+  #datos .imagen-con-descripcion img {
+  width: 100px;
+  height: 100px;
+  }
+
+  .reviews {
+    padding: 30px 15px;
+    gap: 0;
+  }
+
+  .perfil-review img {
+    width: 70px;
+    height: 70px;
+  }
+
 
   /*-----@MENU-----*/
   .seccion_menu {
