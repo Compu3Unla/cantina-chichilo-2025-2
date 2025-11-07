@@ -123,7 +123,7 @@ header {
 }
 
 .menu-icono {
-  display: none; 
+  display: none;
   background-image: url('img/hamburguesa.svg');
   background-size: cover;
   width: 26px;
@@ -357,239 +357,64 @@ nav a:hover::after {
   padding: 0px;
 }
 
-/*---entradas---*/
+[class*="accordion_btn_"] {
+  height: 200px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  padding: 0.8rem 1.8rem;
+  transition: background 0.3s;
+
+}
+
+[class*="accordion_content_"] {
+  max-height: 0px;
+  display: flex;
+  overflow: hidden;
+  transition: max-height 0.4s;
+  margin: 0px;
+  padding: 0px 16px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+[class*="accordion_content_"].show {
+  width: 100%;
+  margin: 0 0 15px 0px;
+  padding: 1rem;
+  background-color: #F5DFA5;
+  display: flex;
+  justify-content: space-between;
+}
 
 .accordion_btn_entradas {
-  height: 200px;
-  cursor: pointer;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-image: url(img/menu/entradas.jpg);
-  border-width: initial;
-  border-style: none;
-  border-color: initial;
-  border-image: initial;
-  padding: 0.8rem 1.8rem;
-  transition: background 0.3s;
 }
-
-.accordion_content_entradas {
-  max-height: 0px;
-  display: flex;
-  overflow: hidden;
-  transition: max-height 0.4s;
-  margin: 0px;
-  padding: 0px 16px;
-  justify-content: space-between;
-  width: 100%;
-}
-
-
-.accordion_content_entradas.show {
-  width: 100%;
-  margin: 0px;
-  padding: 1rem;
-  background-color: #F5DFA5;
-  display: flex;
-  justify-content: space-between;
-}
-
-/*---minutas---*/
 
 .accordion_btn_minutas {
-  height: 200px;
-  cursor: pointer;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url(img/menu/minutas.jpg);
-  border-width: initial;
-  border-style: none;
-  border-color: initial;
-  border-image: initial;
-  padding: 0.8rem 1.8rem;
-  transition: background 0.3s;
-
+  background-image: url(img/menu/minutas.jpg);
 }
-
-.accordion_content_minutas {
-  max-height: 0px;
-  display: flex;
-  overflow: hidden;
-  transition: max-height 0.4s;
-  margin: 0px;
-  padding: 0px 16px;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.accordion_content_minutas.show {
-  width: 100%;
-  margin: 0px;
-  padding: 1rem;
-  background-color: #F5DFA5;
-  display: flex;
-  justify-content: space-between;
-}
-
-/*---postres---*/
 
 .accordion_btn_postres {
-  height: 200px;
-  cursor: pointer;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-image: url(img/menu/postres.jpg);
-  border-width: initial;
-  border-style: none;
-  border-color: initial;
-  border-image: initial;
-  padding: 0.8rem 1.8rem;
-  transition: background 0.3s;
-
-}
-
-.accordion_content_postres {
-  max-height: 0px;
-  display: flex;
-  overflow: hidden;
-  transition: max-height 0.4s;
-  margin: 0px;
-  padding: 0px 16px;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.accordion_content_postres.show {
-  width: 100%;
-  margin: 0px;
-  padding: 1rem;
-  background-color: #F5DFA5;
-  display: flex;
-  justify-content: space-between;
 }
 
 .accordion_btn_pastas {
-  height: 200px;
-  cursor: pointer;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url(img/menu/pastas.jpg);
-  border-width: initial;
-  border-style: none;
-  border-color: initial;
-  border-image: initial;
-  padding: 0.8rem 1.8rem;
-  transition: background 0.3s;
-
+  background-image: url(img/menu/pastas.jpg);
 }
-
-.accordion_content_pastas {
-  max-height: 0px;
-  display: flex;
-  overflow: hidden;
-  transition: max-height 0.4s;
-  margin: 0px;
-  padding: 0px 16px;
-  justify-content: space-between;
-  width: 100%;
-
-}
-
-.accordion_content_pastas.show {
-  width: 100%;
-  margin: 0px;
-  padding: 1rem;
-  background-color: #F5DFA5;
-  display: flex;
-  justify-content: space-between;
-}
-
-/*-----mariscos-----*/
 
 .accordion_btn_mariscos {
-  height: 200px;
-  cursor: pointer;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url(img/menu/mariscos.jpg);
-  border-width: initial;
-  border-style: none;
-  border-color: initial;
-  border-image: initial;
-  padding: 0.8rem 1.8rem;
-  transition: background 0.3s;
-
+  background-image: url(img/menu/mariscos.jpg);
 }
-
-.accordion_content_mariscos {
-  max-height: 0px;
-  display: flex;
-  overflow: hidden;
-  transition: max-height 0.4s;
-  margin: 0px;
-  padding: 0px 16px;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.accordion_content_mariscos.show {
-  width: 100%;
-  margin: 0px;
-  padding: 1rem;
-  background-color: #F5DFA5;
-  display: flex;
-  justify-content: space-between;
-}
-
-/*-----bebidas-----*/
 
 .accordion_btn_bebidas {
-  height: 200px;
-  cursor: pointer;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url(img/menu/bebidas.jpg);
-  border-width: initial;
-  border-style: none;
-  border-color: initial;
-  border-image: initial;
-  padding: 0.8rem 1.8rem;
-  transition: background 0.3s;
-
-}
-
-.accordion_content_bebidas {
-  max-height: 0px;
-  display: flex;
-  overflow: hidden;
-  transition: max-height 0.4s;
-  margin: 0px;
-  padding: 0px 16px;
-  justify-content: space-between;
-  width: 100%;
-
-}
-
-.accordion_content_bebidas.show {
-  width: 100%;
-  margin: 0px;
-  padding: 1rem;
-  background-color: #F5DFA5;
-  display: flex;
-  justify-content: space-between;
-
+  background-image: url(img/menu/bebidas.jpg);
 }
 
 /*-----listas-----*/
@@ -611,6 +436,14 @@ ul.lista_precios {
   line-height: 2rem;
   font-size: 1rem;
   text-align: right;
+}
+
+li.destacado_menu {
+  font-style: italic;
+  font-size: 1rem;
+  font-family: 'petrona', serif;
+  line-height: 1.5rem;
+  font-weight: 700;
 }
 
 /*-----RESERVAS-----*/
@@ -940,11 +773,11 @@ footer ul {
     transition: all 0.4s ease;
   }
 
-  #menu-toggle:checked + .menu-icono + .navegador {
+  #menu-toggle:checked+.menu-icono+.navegador {
     display: flex;
   }
 
-  #menu-toggle:checked + .menu-icono {
+  #menu-toggle:checked+.menu-icono {
     background-image: url('img/nosotros/cruz.svg');
   }
 
@@ -1006,23 +839,23 @@ footer ul {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-}
+  }
 
   /*-----@RESERVAS-----*/
-.reservas {
-  margin-bottom: 30px;
-}
+  .reservas {
+    margin-bottom: 30px;
+  }
 
   /*-----@FOOTER-----*/
-footer {
+  footer {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column-reverse;
     gap: 20px;
     padding-bottom: 30px;
-}
+  }
 
-.redes{
-  gap: 70px;
-}
+  .redes {
+    gap: 70px;
+  }
 }
