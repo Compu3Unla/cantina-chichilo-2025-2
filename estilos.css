@@ -372,7 +372,6 @@ nav a:hover::after {
   border-image: initial;
   padding: 0.8rem 1.8rem;
   transition: background 0.3s;
-
 }
 
 [class*="accordion_content_"] {
@@ -397,34 +396,40 @@ nav a:hover::after {
 
 
 .accordion_btn_entradas {
-  background-image: url(img/menu/entradas.jpg);
+  background-image: url(img/menu/entradas.png);
+  text-shadow: 1px 4px 10px black;
 }
 
 .accordion_btn_minutas {
-  background-image: url(img/menu/minutas.jpg);
+  background-image: url(img/menu/minutas.png);
+  text-shadow: 1px 4px 10px black;
 }
 
 .accordion_btn_postres {
-  background-image: url(img/menu/postres.jpg);
+  background-image: url(img/menu/postres.png);
+  text-shadow: 1px 4px 10px black;
 }
 
 .accordion_btn_pastas {
-  background-image: url(img/menu/pastas.jpg);
+  background-image: url(img/menu/pastas.png);
+  text-shadow: 1px 4px 10px black;
 }
 
 .accordion_btn_mariscos {
-  background-image: url(img/menu/mariscos.jpg);
+  background-image: url(img/menu/mariscos.png);
+  text-shadow: 1px 4px 10px black;
 }
 
 .accordion_btn_bebidas {
-  background-image: url(img/menu/bebidas.jpg);
+  background-image: url(img/menu/bebidas.png);
+  text-shadow: 1px 4px 10px black;
 }
 
 /*-----listas-----*/
 ul.lista_items {
   list-style-type: none;
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
+  padding: 0;
+  margin: 0;
   font-family: 'baloo 2', sans-serif;
   line-height: 2rem;
   font-size: 1rem;
@@ -432,8 +437,8 @@ ul.lista_items {
 
 ul.lista_precios {
   list-style-type: none;
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
+  padding: 0;
+  margin: 0;
   text-align: right;
   line-height: 2rem;
   font-size: 1rem;
