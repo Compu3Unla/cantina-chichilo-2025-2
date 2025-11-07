@@ -11,9 +11,49 @@
   text-decoration: none;
 }
 
+.intro {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: #274635;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-in-out;
+}
+
+.intro.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.intro img {
+  position: absolute;
+  top: 41%;
+  left: 32%;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 body {
   background-color: #FAF9E7;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -57,6 +97,14 @@ h6 {
   line-height: 2rem;
 }
 
+h7 {
+  font-family: Petrona;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: auto;
+}
+
 /*-----HEADER-----*/
 header {
   font-size: 18px;
@@ -68,6 +116,19 @@ header {
   padding: 15px;
   margin-left: 15px;
   margin-right: 15px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icono {
+  display: none; 
+  background-image: url('img/hamburguesa.svg');
+  background-size: cover;
+  width: 26px;
+  height: 26px;
+  z-index: 999;
 }
 
 .navegador {
@@ -102,40 +163,32 @@ nav a:hover::after {
 }
 
 /*-----INDEX-----*/
-#hero-index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-video {
+.video-container {
   position: relative;
 }
 
-#overlay {
+.video-container video {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 50%;
+}
+
+#hero-index {
+  background-color: #151614;
+}
+
+.video-container #overlay {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding: 50px 0 50px 0;
 }
 
 #overlay h3 {
   color: #FAF9E7;
-}
-
-#opacidad-video {
-  position: absolute;
-  width: 1920px;
-  height: 428px;
-  background-color: black;
-  opacity: 0.4;
-  z-index: 0;
-}
-
-#hero-index video {
-  display: block;
 }
 
 .imagen-con-descripcion {
@@ -163,9 +216,28 @@ video {
   background-color: #274635;
   border-radius: 50px;
   padding: 10px 20px 10px 20px;
+  position: relative;
+  display: inline-block;
 }
 
 .botones a {
+  color: #FAF9E7;
+}
+
+.botones::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 0px;
+  left: 0;
+  background: #FAF9E7;
+  border-radius: 50px;
+  transition: width 0.3s ease-in-out;
+}
+
+.botones:hover::after {
+  width: 100%;
   color: #FAF9E7;
 }
 
@@ -201,8 +273,52 @@ video {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 80px;
+  padding: 60px 50px 60px;
+}
+
+#datos p {
+  font-weight: bold;
+}
+
+#texto-color-1 {
+  color: #D83222;
+}
+
+#texto-color-2 {
+  color: #274635;
+}
+
+#texto-color-3 {
+  color: #7C1A0F;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-direction: inline;
+  align-items: flex-start;
+  padding-bottom: 30px;
   gap: 60px;
-  margin: 30px;
+}
+
+.review {
+  margin: 0;
+  width: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuerpo-review {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /*-----MENÚ-----*/
@@ -236,7 +352,6 @@ video {
   display: flex;
   align-items: flex-start;
   background-color: rgb(245, 223, 165);
-  max-width: 50%;
   width: 420px;
   flex-direction: column;
   padding: 0px;
@@ -511,8 +626,93 @@ ul.lista_precios {
   gap: 3px;
 }
 
+#data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  gap: 5px;
+}
+
+#data p {
+  font-family: "Petrona";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.reservas {
+  background-image: url(img/mantel.png);
+}
+
+.reservas-contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.reservas-alergias {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 10px;
+}
+
+.si,
+.no,
+.enviar {
+  border-radius: 71px;
+  padding: 2px 20px;
+  border: 2px solid #151614;
+  background-color: #FAF9E7;
+  font-size: 1.2em;
+}
+
+.si:hover,
+.enviar:hover {
+  background-color: #274635;
+  color: white;
+  border: 2px solid #274635;
+}
+
+.no:hover {
+  background-color: #7C1A0F;
+  color: white;
+  border: 2px solid #7C1A0F;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  background-color: #FAF9E7;
+  padding: 40px;
+  max-width: 800px;
+  margin: 60px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 16px;
+  background-color: white;
+  color: #151614;
+  border: solid 2px;
+}
+
+textarea {
+  resize: both;
+}
+
+.fin-formulario {
+  display: flex;
+  justify-content: flex-end;
+}
 
 /*-----NOSOTROS-----*/
+
 #hero-nosotros {
   background-image: url('img/nosotros/reserva.jpg');
   background-size: cover;
@@ -586,82 +786,103 @@ ul.lista_precios {
   padding-top: 15px;
 }
 
-/*-----RESERVAS-----*/
-.reservas {
-  background-image: url(img/mantel.svg);
-}
-
-.reservas-contenedor {
+.caja-proyectos {
+  margin-bottom: 50px;
+  padding-left: 50px;
+  padding-left: 50px;
   display: flex;
-  padding: 40px;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.input_group {
+.img-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#galeria {
+  display: none;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #274635;
+  position: fixed;
+  gap: 12px;
+  z-index: 1000;
+}
+
+#galeria-oculta {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.contenido-galeria {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
-}
-
-.reservas-alergias {
-  display: flex;
-  flex-direction: row;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  gap: 10px;
-}
-
-.si,
-.no,
-.enviar {
-  border-radius: 71px;
-  padding: 15px, 15px, 15px, 15px;
-  border: 2px solid black;
-  background-color: #FAF9E7;
-  font-size: 1.2em;
-}
-
-.si,
-.enviar:hover {
-  background-color: #274635;
-  color: white;
-  border: 2px solid #274635;
-}
-
-.no:hover {
-  background-color: #7C1A0F;
-  color: white;
-  border: 2px solid #7C1A0F;
-}
-
-.form-fields {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background-color: #FAF9E7;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-input,
-textarea {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   width: 100%;
-  padding: 10px;
-  border-radius: 15px;
-  font-size: 16px;
-  background-color: white;
-  color: black;
+  min-width: 1250px;
+  height: 100vh;
+  justify-content: space-between;
 }
 
-textarea {
-  resize: both;
+.contenido-galeria img {
+  margin: 10px;
 }
 
-.fin-formulario {
-  display: flex;
-  justify-content: flex-end;
+.primer-ultima-flecha {
+  visibility: hidden;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 2%;
+}
+
+#foto-1 {
+  background-image: url("img/nosotros/nosotros-4.jpg");
+}
+
+#foto-2 {
+  background-image: url("img/nosotros/nosotros-5.jpg");
+}
+
+#foto-3 {
+  background-image: url("img/nosotros/nosotros-6.jpg");
+}
+
+#foto-4 {
+  background-image: url("img/nosotros/nosotros-7.jpg");
+}
+
+#foto-5 {
+  background-image: url("img/nosotros/nosotros-8.jpg");
+}
+
+#foto-6 {
+  background-image: url("img/nosotros/nosotros-9.jpg");
+}
+
+#foto-7 {
+  background-image: url("img/nosotros/nosotros-10.jpg");
+}
+
+#foto-8 {
+  background-image: url("img/nosotros/nosotros-11.jpg");
 }
 
 /*-----FOOTER-----*/
+
 footer {
   display: flex;
   flex-direction: row;
@@ -680,4 +901,128 @@ footer ul {
   align-items: center;
   gap: 30px;
   list-style-type: none;
+}
+
+/*-----RESPONSIVE-----*/
+@media (max-width: 575px) {
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  .menu-icono {
+    display: block;
+    z-index: 1000;
+  }
+
+  .navegador {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+    width: 75%;
+    height: 100vh;
+    background-color: #FAF9E7;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px 50px;
+    z-index: 999;
+    transition: all 0.4s ease;
+  }
+
+  #menu-toggle:checked + .menu-icono + .navegador {
+    display: flex;
+  }
+
+  #menu-toggle:checked + .menu-icono {
+    background-image: url('img/nosotros/cruz.svg');
+  }
+
+  nav a {
+    font-size: 24px;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /*-----@MENU-----*/
+  .seccion_menu {
+    margin: 0;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .accordion_entradas,
+  .accordion_minutas,
+  .accordion_bebidas,
+  .accordion_mariscos,
+  .accordion_pastas,
+  .accordion_postres {
+    max-width: 100%;
+  }
+
+  /*-----@NOSOTROS-----*/
+  .nosotros,
+  .nosotros-verde {
+    flex-direction: column;
+    padding: 20px;
+    gap: 25px;
+  }
+
+  .img-nosotros img,
+  .img-nosotros-verde img {
+    width: 100%;
+    height: auto;
+  }
+
+  .texto-nosotros,
+  .texto-nosotros-verde {
+    max-width: 100%;
+    padding: 30px;
+  }
+
+  .img-proyectos {
+    gap: 20px;
+  }
+
+  .img-proyectos img {
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+  /*-----@RESERVAS-----*/
+.reservas {
+  margin-bottom: 30px;
+}
+
+  /*-----@FOOTER-----*/
+footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.redes{
+  gap: 70px;
+}
 }

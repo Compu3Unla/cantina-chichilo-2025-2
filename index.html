@@ -13,10 +13,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+  <div class="intro">
+    <img src="img/index/gif_logo.GIF" alt="Logo">
+  </div>
+
 <body>
     <header>
         <a href="index.html"><img class="icono" src="img/reduccion.svg" alt="logo-chichilo" width="63px"
                 height="50px"></a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icono"></label>
         <nav class="navegador">
             <a href="menu.html">MENÚ</a>
             <a href="reservas.html">RESERVAS</a>
@@ -26,13 +32,17 @@
 
     <main>
         <section id="hero-index">
-            <video src="img/index/video.mp4" autoplay loop width="1920" height="428px" muted></video>
-            <div id="opacidad-video"></div>
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="img/index/video.mp4" type="video/mp4" />
+                </video>
             <article id="overlay">
                 <img src="img/logo.svg" height="150px" width="435px" alt="logo-chichilo" id="logo">
                 <h3>Una Familia Para Servirlo</h3>
             </article>
+            </div>
         </section>
+
         <section id="nuestras-especialidades">
             <h3>Nuestras especialidades</h3>
             <article id="las-especialidades">
@@ -55,7 +65,7 @@
                 </div>
             </article>
             <div class="botones">
-                <a href="menu.html">VER MENÚ</a>
+                <a href="menu.html">MIRÁ NUESTRO MENÚ</a>
             </div>
         </section>
 
@@ -91,6 +101,69 @@
                 <p id="texto-color-3">Preferido del barrio</p>
             </div>
         </section>
+
+
+        <section class="reviews">
+
+            <div class="review">
+                <div class="perfil-review">
+                    <img src="img/index/perfil1.png" width="60px" height="60px">
+                </div>
+                <div class="cuerpo-review">
+                    <h7>Jorge Fefer</h7>
+                    <h6>Hace 1 semana</h6>
+                    <div class="rating">
+                        <img src="img/index/estrella.svg" alt="estrella" width="23px" height="23px" />
+                        <img src="img/index/estrella.svg" alt="estrella" width="23px" height="23px" />
+                        <img src="img/index/estrella.svg" alt="estrella" width="23px" height="23px" />
+                        <img src="img/index/estrella.svg" alt="estrella" width="23px" height="23px" />
+                        <img src="img/index/estrella.svg" alt="estrella" width="23px" height="23px" />
+                    </div>
+                    <p>Vale la pena vivir la experiencia de comer en esta cantina, ubicada en el barrio de La Paternal.
+                        Futbolista. Se come increíblemente bien. Y la atencion buenísima.</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="perfil-review">
+                    <img src="img/index/perfil2.png" width="60px" height="60px">
+                </div>
+                <div class="cuerpo-review">
+                    <h7>Micaela Malchevski</h7>
+                    <h6>Hace 1 mes</h6>
+                    <div class="rating">
+                        <img src="img/index/estrella.svg" alt="estrella" width="23px" height="23px" />
+                        <img src="img/index/estrella.svg" alt="estrella" width="23px" height="23px" />
+                        <img src="img/index/estrella.svg" alt="estrella" width="23px" height="23px" />
+                        <img src="img/index/estrella.svg" alt="estrella" width="23px" height="23px" />
+                        <img src="img/index/estrella.svg" alt="estrella" width="23px" height="23px" />
+                    </div>
+                    <p>Amo, tipo bodegón italiano, se especializa en pasta que son de otro planeta. La atención es amable y cordial de esos mozos que saben toda la carta y cada
+                        ingrediente. Recomiendo!</p>
+                </div>
+            </div>
+
+            <div class="review">
+                <div class="perfil-review">
+                    <img src="img/index/perfil3.png" width="60px" height="60px">
+                </div>
+                <div class="cuerpo-review">
+                    <h7>Maximiliano Ruiz</h7>
+                    <h6>Hace 3 meses</h6>
+                    <div class="rating">
+                        <img src="img/index/estrella.svg" alt="estrella" width="23px" height="23px" />
+                        <img src="img/index/estrella.svg" alt="estrella" width="23px" height="23px" />
+                        <img src="img/index/estrella.svg" alt="estrella" width="23px" height="23px" />
+                        <img src="img/index/estrella.svg" alt="estrella" width="23px" height="23px" />
+                    </div>
+                    <p>Atendido por sus propios dueños y su equipo de mozos de hace muchos años, que saben asesorar muy
+                        bien, todo para conocer y probar. Platos abundantes! Muy familiar.</p>
+                </div>
+            </div>
+
+            </div>
+
+        </section>
     </main>
 
     <footer>
@@ -108,5 +181,6 @@
         </ul>
     </footer>
 </body>
+<script src="app.js"></script>
 
 </html>
