@@ -118,6 +118,19 @@ header {
   margin-right: 15px;
 }
 
+#menu-toggle {
+  display: none;
+}
+
+.menu-icono {
+  display: none; 
+  background-image: url('img/hamburguesa.svg');
+  background-size: cover;
+  width: 26px;
+  height: 26px;
+  z-index: 999;
+}
+
 .navegador {
   display: flex;
   gap: 80px;
@@ -951,6 +964,40 @@ footer ul {
     font-size: 1rem;
   }
 
+  .menu-icono {
+    display: block;
+    z-index: 1000;
+  }
+
+  .navegador {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+    width: 75%;
+    height: 100vh;
+    background-color: #FAF9E7;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px 50px;
+    z-index: 999;
+    transition: all 0.4s ease;
+  }
+
+  #menu-toggle:checked + .menu-icono + .navegador {
+    display: flex;
+  }
+
+  #menu-toggle:checked + .menu-icono {
+    background-image: url('img/nosotros/cruz.svg');
+  }
+
+  nav a {
+    font-size: 24px;
+  }
+
   main {
     display: flex;
     flex-wrap: wrap;
@@ -958,7 +1005,7 @@ footer ul {
     justify-content: center;
   }
 
-  /*-----@INDEX-----*/
+  /*-----@MENU-----*/
   .seccion_menu {
     margin: 0;
     padding-top: 20px;
