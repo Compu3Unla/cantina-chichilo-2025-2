@@ -50,7 +50,7 @@ p {
 }
 
 h6 {
-  font-family: Petrona;
+  font-family: 'petrona serif';
   font-size: 1rem;
   font-style: italic;
   font-weight: 400;
@@ -232,9 +232,7 @@ video {
   margin: 0 100px 0 100px;
 }
 
-/*---entradas---*/
-
-.accordion_entradas {
+.accordion_menu {
   display: flex;
   align-items: flex-start;
   background-color: rgb(245, 223, 165);
@@ -243,6 +241,8 @@ video {
   flex-direction: column;
   padding: 0px;
 }
+
+/*---entradas---*/
 
 .accordion_btn_entradas {
   height: 200px;
@@ -258,7 +258,6 @@ video {
   border-image: initial;
   padding: 0.8rem 1.8rem;
   transition: background 0.3s;
-
 }
 
 .accordion_content_entradas {
@@ -283,15 +282,6 @@ video {
 }
 
 /*---minutas---*/
-.accordion_minutas {
-  display: flex;
-  align-items: flex-start;
-  background-color: rgb(245, 223, 165);
-  max-width: 50%;
-  width: 420px;
-  flex-direction: column;
-  padding: 0px;
-}
 
 .accordion_btn_minutas {
   height: 200px;
@@ -331,15 +321,6 @@ video {
 }
 
 /*---postres---*/
-.accordion_postres {
-  display: flex;
-  align-items: flex-start;
-  background-color: rgb(245, 223, 165);
-  max-width: 50%;
-  width: 420px;
-  flex-direction: column;
-  padding: 0px;
-}
 
 .accordion_btn_postres {
   height: 200px;
@@ -376,17 +357,6 @@ video {
   background-color: #F5DFA5;
   display: flex;
   justify-content: space-between;
-}
-
-/*---pastas---*/
-.accordion_pastas {
-  display: flex;
-  align-items: flex-start;
-  background-color: rgb(245, 223, 165);
-  max-width: 50%;
-  width: 420px;
-  flex-direction: column;
-  padding: 0px;
 }
 
 .accordion_btn_pastas {
@@ -429,16 +399,6 @@ video {
 
 /*-----mariscos-----*/
 
-.accordion_mariscos {
-  display: flex;
-  align-items: flex-start;
-  background-color: rgb(245, 223, 165);
-  max-width: 50%;
-  width: 420px;
-  flex-direction: column;
-  padding: 0px;
-}
-
 .accordion_btn_mariscos {
   height: 200px;
   cursor: pointer;
@@ -478,16 +438,6 @@ video {
 
 /*-----bebidas-----*/
 
-.accordion_bebidas {
-  display: flex;
-  align-items: flex-start;
-  background-color: rgb(245, 223, 165);
-  max-width: 50%;
-  width: 420px;
-  flex-direction: column;
-  padding: 0px;
-}
-
 .accordion_btn_bebidas {
   height: 200px;
   cursor: pointer;
@@ -516,7 +466,6 @@ video {
   width: 100%;
 
 }
-
 
 .accordion_content_bebidas.show {
   width: 100%;
