@@ -662,7 +662,6 @@ textarea {
 #galeria-oculta {
   display: flex;
   width: 100%;
-  max-width: 1450px;
   overflow: hidden;
   z-index: 20;
 }
@@ -754,10 +753,6 @@ footer ul {
 
 /*-----RESPONSIVE-----*/
 @media (max-width: 575px) {
-
-  p {
-    font-size: 0.9rem;
-  }
 
   h2 {
     font-size: 2.2rem;
@@ -894,34 +889,51 @@ footer ul {
   }
 
   /*-----@NOSOTROS-----*/
-  .nosotros,
+  #hero-nosotros {
+    height: 100px;
+    background-position: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .nosotros {
+    padding: 1rem 15px;
+  }
+
   .nosotros-verde {
-    flex-direction: column;
-    padding: 20px;
-    gap: 25px;
-  }
-
-  .img-nosotros img,
-  .img-nosotros-verde img {
-    width: 100%;
-    height: auto;
-  }
-
-  .texto-nosotros,
-  .texto-nosotros-verde {
-    max-width: 100%;
-    padding: 30px;
+    padding: 1.5rem 15px;
   }
 
   .img-nosotros {
-    gap: 20px;
+    text-align: center;
   }
 
-  .img-proyectos img {
-    width: 80%;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
+  .img-nosotros-gal {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .close{
+    top: 17%;
+  }
+
+  #galeria-oculta {
+    margin-top: 100px;
+  }
+
+  .img-nosotros-gal img {
+    width: 95%;
+    height: auto;
+  }
+
+  .caja-nosotros-galeria {
+    margin: 10px;
+    gap: 10px;
+  }
+
+  .fraccion {
+    min-width: 100%;
+    justify-content: space-between;
   }
 
   /*-----@RESERVAS-----*/
