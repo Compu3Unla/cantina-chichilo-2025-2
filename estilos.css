@@ -54,6 +54,7 @@ body {
   background-color: #FAF9E7;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  height: 100%;
 }
 
 h2 {
@@ -346,6 +347,7 @@ nav a:hover::after {
   gap: 20px;
   padding: 2.5rem 0;
   margin: 0 100px 0 100px;
+  height: 100%;
 }
 
 .accordion_menu {
@@ -393,6 +395,7 @@ nav a:hover::after {
   justify-content: space-between;
 }
 
+
 .accordion_btn_entradas {
   background-image: url(img/menu/entradas.jpg);
 }
@@ -422,7 +425,7 @@ ul.lista_items {
   list-style-type: none;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  font-family: 'Baloo 2', sans-serif;
+  font-family: 'baloo 2', sans-serif;
   line-height: 2rem;
   font-size: 1rem;
 }
@@ -431,19 +434,21 @@ ul.lista_precios {
   list-style-type: none;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  font-family: 'petrona', serif;
-  font-weight: 400;
+  text-align: right;
   line-height: 2rem;
   font-size: 1rem;
-  text-align: right;
 }
 
 li.destacado_menu {
   font-style: italic;
   font-size: 1rem;
   font-family: 'petrona', serif;
-  line-height: 1.5rem;
+  line-height: 3rem;
   font-weight: 700;
+}
+
+li.subtitulo_menu {
+  font-weight: 600;
 }
 
 /*-----RESERVAS-----*/
